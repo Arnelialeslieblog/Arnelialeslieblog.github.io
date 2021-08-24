@@ -12,15 +12,15 @@ I will be graduating soon. I wanted to know what I have to look forward to. The 
 
 ## Objectives
 
-What kind of jobs get higher salaries? (Job Title, Salary Estimate)
-What kind of companies pays more? (Company, Size, Industry, Revenue)
+What kind of jobs get the higher salaries? (Job Title, Salary Estimate)
+What kind of companies will pay more? (Company, Size, Industry, Revenue)
 Does the job location matter to salaries?
 
 
 The limit and assumption is
  
 
-*   the salary estimates come from Glassdoor, which may not reflect the actual salaries.
+*   The salary estimates come from Glassdoor, which may not reflect the actual salaries.
 *   The dataset only reflet the outcome at the time the dataset was published, which is supposed to be July 2020. 
 
 ### Hypothesis:
@@ -49,10 +49,10 @@ ds['Min_Salary']=ds['Min_Salary'].str.strip(' ').str.lstrip('$').str.rstrip('K')
 ds['Max_Salary']=ds['Max_Salary'].str.strip(' ').str.lstrip('$').str.rstrip('K').fillna(0).astype('int')
 
 
-# To estimate the salary with regression and other analysis, better come up with one number: Est_Salary = (Min_Salary+Max_Salary)/2
+# To estimate the salary with for analysis, we will look at one number: Est_Salary = (Min_Salary+Max_Salary)/2
 ds['Est_Salary']=(ds['Min_Salary']+ds['Max_Salary'])/2
 
-# To estimate the size with regression and other analysis, better come up with one number: Est_Salary = (Min_Salary+Max_Salary)/2
+# To estimate the size for analysis, we will look at one number: Est_Salary = (Min_Salary+Max_Salary)/2
 #ds['Est_Size']=(ds['Min_Size']+ds['Max_Size'])/2
 
 # Separate 'City' & 'State' from job 'Location'
