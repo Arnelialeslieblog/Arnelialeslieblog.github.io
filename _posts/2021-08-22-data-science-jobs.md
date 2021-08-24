@@ -67,25 +67,25 @@ ds['State']=ds['State'].replace('NY (US), NY','NY')
 I rechecked for missing values. 
 
 
-|Job Title|0|
-|Salary Estimate|0|
-|Rating|405|
-|Company Name|0|
-|Location |0|
-|Headquarters |240|
-|Size| 229|
-|Founded|970|
-|Type of ownership||229|
-|Industry|543|
-|Sector|543|
-|Revenue|229|
-|Competitors|2743|
-|Easy Apply|3725|
-|Min_Salary|0|
-|Max_Salary|0|
-|Est_Salary|0|
-|City|0|
-|State|0|
+| Job Title | 0 |
+| Salary Estimate | 0 |
+| Rating | 405 |
+| Company Name | 0 |
+| Location | 0 |
+| Headquarters | 240 |
+| Size | 229 |
+| Founded | 970 |
+| Type of ownership | 229 |
+| Industry | 543 |
+| Sector | 543 |
+| Revenue | 229 |
+| Competitors | 2743 |
+| Easy Apply | 3725 |
+| Min_Salary | 0 |
+| Max_Salary | 0 |
+| Est_Salary | 0 |
+| City | 0 |
+| State | 0 |
 dtype: int64
 
 Now you can see there are a lot of missing values in the dataset. 'Easy Apply' and 'Competitors' has maximum number of missing values (> 50%)
